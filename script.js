@@ -5,7 +5,7 @@ var nextBtn = document.getElementById("next");
 
 var currentIndex = 0;
 
-// Helper: Set cookie
+
 function setCookie(name, value, days) {
   var expires = "";
   if (days) {
@@ -16,7 +16,7 @@ function setCookie(name, value, days) {
   document.cookie = name + "=" + encodeURIComponent(value) + expires + "; path=/";
 }
 
-// Helper: Get cookie
+
 function getCookie(name) {
   var nameEQ = name + "=";
   var ca = document.cookie.split(";");
@@ -27,7 +27,7 @@ function getCookie(name) {
   return null;
 }
 
-// Load from cookie
+
 var saved = getCookie("sliderIndex");
 if (saved !== null) {
   currentIndex = parseInt(saved, 10);
@@ -39,7 +39,7 @@ function updateSlider() {
     slide.style.transform = `translateX(${offset}%)`;
   });
 
-  // Save current index in cookie for 3 days
+
   setCookie("sliderIndex", currentIndex, 3);
 }
 
@@ -56,5 +56,4 @@ function goNext() {
 prevBtn.addEventListener("click", goPrev);
 nextBtn.addEventListener("click", goNext);
 
-// Initial load
 updateSlider();
