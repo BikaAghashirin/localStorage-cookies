@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-/* Slider container */
+
 .slider-container {
   width: 300px;
   height: 150px;
@@ -15,7 +15,7 @@
   border-radius: 10px;
 }
 
-/* Individual slides */
+
 .slide {
   position: absolute;
   width: 100%;
@@ -35,7 +35,7 @@
 #slide3 { background-color: #99ffd1; }
 #slide4 { background-color: #ffff99; }
 
-/* Controls container */
+
 .controls {
   width: 300px;
   margin: 20px auto 0;
@@ -43,7 +43,7 @@
   justify-content: space-between;
 }
 
-/* Buttons */
+
 .controls button {
   padding: 10px 20px;
   font-size: 16px;
